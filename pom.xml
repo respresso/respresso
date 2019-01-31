@@ -5,9 +5,52 @@
 
 	<groupId>hu.ponte.respresso</groupId>
 	<artifactId>sync-client</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.1</version>
+	<packaging>jar</packaging>
 	<modelVersion>4.0.0</modelVersion>
 	<name>Common Sync Client</name>
+	<description>This is a middleware layer between server and clients.</description>
+	<url>https://github.com/pontehu/respresso-sync-for-clients</url>
+	<inceptionYear>2018</inceptionYear>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>jcenter</id>
+			<name>JCenter</name>
+			<url>https://jcenter.bintray.com/</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<organization>
+		<name>Ponte.hu Kft.</name>
+		<url>https://ponte.hu</url>
+	</organization>
+
+	<licenses>
+		<license>
+			<name>Sync client MIT License</name>
+			<url>https://github.com/pontehu/respresso-sync-for-clients/blob/master/LICENSE.txt</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name>Ponte</name>
+			<email>info@respresso.io</email>
+			<organization>ponte.hu Kft.</organization>
+			<organizationUrl>https://ponte.hu</organizationUrl>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git://github.com/pontehu/respresso-sync-for-clients.git</connection>
+		<developerConnection>scm:git:ssh://github.com:pontehu/respresso-sync-for-clients.git</developerConnection>
+		<url>https://github.com/pontehu/respresso-sync-for-clients</url>
+	</scm>
 
 	<dependencies>
 
@@ -19,15 +62,23 @@
 
 		<dependency>
 			<groupId>org.jetbrains.kotlin</groupId>
-			<artifactId>kotlin-test</artifactId>
+			<artifactId>kotlin-test-junit</artifactId>
 			<version>1.2.51</version>
 			<scope>test</scope>
 		</dependency>
 
 		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+
+
+		<dependency>
 			<groupId>com.squareup.okhttp3</groupId>
 			<artifactId>okhttp</artifactId>
-			<version>3.11.0</version>
+			<version>3.12.1</version>
 		</dependency>
 
 		<dependency>
@@ -66,21 +117,14 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-
-		<!--<dependency>-->
-			<!--<groupId>commons-lang</groupId>-->
-			<!--<artifactId>commons-lang</artifactId>-->
-			<!--<version>2.6</version>-->
-		<!--</dependency>-->
-
 	</dependencies>
 
 	<build>
 		<plugins>
-
 			<plugin>
 				<groupId>org.jetbrains.kotlin</groupId>
 				<artifactId>kotlin-maven-plugin</artifactId>
+				<version>1.2.51</version>
 				<executions>
 					<execution>
 						<id>compile</id>
@@ -107,7 +151,6 @@
 					<jvmTarget>1.8</jvmTarget>
 				</configuration>
 			</plugin>
-
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -118,19 +161,74 @@
 				</configuration>
 			</plugin>
 
+			<!--Maven Central dependent-->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>3.0.1</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.6.7</version>
+				<extensions>true</extensions>
+				<configuration>
+					<serverId>ossrh</serverId>
+					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.5</version>
+				<executions>
+					<execution>
+						<id>ossrh</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.jetbrains.dokka</groupId>
+				<artifactId>dokka-maven-plugin</artifactId>
+				<version>0.9.17</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>javadocJar</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<sourceDirectories>
+						<dir>src/main/kotlin</dir>
+					</sourceDirectories>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 	<distributionManagement>
-		<repository>
-			<id>ponte-nexus</id>
-			<name>Ponte Nexus</name>
-			<url>http://nexus.ponte:8081/repository/respresso-release/</url>
-		</repository>
 		<snapshotRepository>
-			<id>ponte-nexus-snapshot</id>
-			<name>Ponte Nexus (Snapshot)</name>
-			<url>http://nexus.ponte:8081/repository/respresso-snapshot/</url>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
+		<repository>
+			<id>ossrh-staging</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
 	</distributionManagement>
-
 </project>
