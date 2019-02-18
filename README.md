@@ -1,16 +1,14 @@
 # Respresso
-Respresso is a collaborative resource management tool for multiplatform projects. It automatically transforms and delivers to your project without assistance. Your assets will be ready for use almost immediately.
+Respresso is a collaborative resource management tool for multiplatform projects.   
+It automatically transforms and delivers to your project without assistance, your assets will be ready for use almost immediately.  
+To learn more, check out https://respresso.io/ 
 
 # About
-This is the sync client for Respresso clients (Android, iOS, etc.) (https://respresso.io/). 
+The following is a comprehensive list of guides and sync clients for each platform Respresso is available for.
 
-# Get started for Android
-[Get started](https://github.com/pontehu/respresso-client-android)
+# Guides and client downloads
 
-# Get started for iOS
-[Get started](https://github.com/pontehu/respresso-client-ios)
-
-# Get started for web
+## Web
 [Vanilla js](https://github.com/pontehu/respresso-vanilla)
 
 [React](https://github.com/pontehu/respresso-react)
@@ -18,3 +16,9 @@ This is the sync client for Respresso clients (Android, iOS, etc.) (https://resp
 [Vue](https://github.com/pontehu/respresso-vue)
 
 [Angular](https://github.com/pontehu/respresso-angular)
+
+## Android
+[Get started for Android](https://github.com/pontehu/respresso-client-android)
+
+## iOS
+[Get started for iOS](https://github.com/pontehu/respresso-client-ios)
