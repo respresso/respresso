@@ -15,23 +15,15 @@ To learn more, check out [https://respresso.io](https://respresso.io)
 The following is a comprehensive list of guides and sync clients for each platform Respresso is available for.
 
 # Guides and client downloads
+## Mobile
+
+[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/android.png?raw=true" height="60" alt="Android" />](https://github.com/pontehu/ respresso-client-android)
+[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/ios.png?raw=true" height="60" alt="iOS" />](https://github.com/pontehu/respresso-client-ios)
 
 ## Web
 [Vanilla js](https://github.com/pontehu/respresso-vanilla)
+[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/react.png?raw=true" height="60" alt="React" />](https://github.com/pontehu/respresso-react)
+[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/vue.png?raw=true" height="60" alt="Vue" />](https://github.com/pontehu/respresso-vue)
+[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/angular.png?raw=true" height="60" alt="Angular" />](https://github.com/pontehu/respresso-angular)
 
-![](/images/react.png)  
-[React](https://github.com/pontehu/respresso-react)
 
-![](/images/vue.png)  
-[Vue](https://github.com/pontehu/respresso-vue)
-
-![](/images/angular.png)  
-[Angular](https://github.com/pontehu/respresso-angular)
-
-## Android
-![](/images/android.png)  
-[Get started for Android](https://github.com/pontehu/respresso-client-android)
-
-## iOS
-![](/images/ios.png)  
-[Get started for iOS](https://github.com/pontehu/respresso-client-ios)
