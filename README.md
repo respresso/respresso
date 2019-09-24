@@ -17,7 +17,7 @@ The following is a comprehensive list of guides and sync clients for each platfo
 # Guides and client downloads
 ## Mobile
 
-[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/android.png?raw=true" height="60" alt="Android" />](https://github.com/pontehu/ respresso-client-android)
+[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/android.png?raw=true" height="60" alt="Android" />](https://github.com/pontehu/respresso-client-android)
 [<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/ios.png?raw=true" height="60" alt="iOS" />](https://github.com/pontehu/respresso-client-ios)
 
 ## Web
