@@ -20,13 +20,13 @@ The following is a comprehensive list of guides and sync clients for each platfo
 # Guides and client downloads
 ## Mobile
 
-[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/android.png?raw=true" height="60" alt="Android" />](https://github.com/pontehu/respresso-client-android)
-[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/ios.png?raw=true" height="60" alt="iOS" />](https://github.com/pontehu/respresso-client-ios)
+[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/android.png?raw=true" height="80" alt="Android" />](https://github.com/pontehu/respresso-client-android)
+[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/ios.png?raw=true" height="80" alt="iOS" />](https://github.com/pontehu/respresso-client-ios)
 
 ## Web
-[Vanilla js](https://github.com/pontehu/respresso-vanilla)
-[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/react.png?raw=true" height="60" alt="React" />](https://github.com/pontehu/respresso-react)
-[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/vue.png?raw=true" height="60" alt="Vue" />](https://github.com/pontehu/respresso-vue)
-[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/angular.png?raw=true" height="60" alt="Angular" />](https://github.com/pontehu/respresso-angular)
+[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/vanilla_js.png?raw=true" height="80" alt="VanillaJS" />](https://github.com/pontehu/respresso-vanilla)
+[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/react.png?raw=true" height="80" alt="React" />](https://github.com/pontehu/respresso-react)
+[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/vue.png?raw=true" height="80" alt="Vue" />](https://github.com/pontehu/respresso-vue)
+[<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/angular.png?raw=true" height="80" alt="Angular" />](https://github.com/pontehu/respresso-angular)
 
 
