@@ -1,10 +1,8 @@
 [<div align="center"><img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/header.png?raw=true" /></div>](https://respresso.io)  
 
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Save%20development%20time%21%20Respresso%20automatically%20transforms%20and%20delivers%20your%20digital%20assets%20into%20your%20projects&url=https://respresso.io&via=respresso_io&hashtags=developer,tool,localization,image,resources,digital-assets,convert,automation)   
+# Introduction [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Save%20development%20time%21%20Respresso%20automatically%20transforms%20and%20delivers%20your%20digital%20assets%20into%20your%20projects&url=https://respresso.io&via=respresso_io&hashtags=developer,tool,localization,image,resources,digital-assets,convert,automation)  
 
-# Introduction 
-
-Respresso is a centralized resource manager for shared Android, iOS and Web frontend projects. It allows you to simply import the latest assets into your workspace. You may store several versions of the same resource in the cloud and pick the ones you need to import. Respresso currently supports six types of resources:  
+[Respresso](https://respresso.io) is a centralized resource manager for shared Android, iOS and Web frontend projects. It allows you to simply import the latest assets into your workspace. You may store several versions of the same resource in the cloud and pick the ones you need to import. Respresso currently supports six types of resources:  
 * Images  
 * App icons  
 * Localization  
