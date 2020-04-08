@@ -27,4 +27,9 @@ The following is a comprehensive list of guides and sync clients for each platfo
 [<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/vue.png?raw=true" height="80" alt="Vue" />](https://github.com/pontehu/respresso-vue)
 [<img src="https://github.com/pontehu/respresso-sync-for-clients/blob/master/images/angular.png?raw=true" height="80" alt="Angular" />](https://github.com/pontehu/respresso-angular)
 
+# Guides
+## Plugins
+[<img src="https://github.com/pontehu/respresso/blob/master/images/figma.png?raw=true" height="80" alt="Figma" />](https://github.com/pontehu/respresso-figma)
+[<img src="https://github.com/pontehu/respresso/blob/master/images/adobe_xd.png?raw=true" height="80" alt="Adobe XD" />](https://github.com/pontehu/respresso-adobexd)
+
 
