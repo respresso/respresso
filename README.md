@@ -31,5 +31,6 @@ The following is a comprehensive list of guides and sync clients for each platfo
 ## Plugins
 [<img src="https://github.com/pontehu/respresso/blob/master/images/figma.png?raw=true" height="80" alt="Figma" />](https://github.com/pontehu/respresso-figma)
 [<img src="https://github.com/pontehu/respresso/blob/master/images/adobe_xd.png?raw=true" height="80" alt="Adobe XD" />](https://github.com/pontehu/respresso-adobexd)
+<img src="https://github.com/respresso/respresso/blob/master/images/zeplin.png?raw=true" height="80" alt="Zeplin" />](https://github.com/respresso/respresso-zeplin)
 
 
